@@ -1,0 +1,186 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  padding-left: 14rem;
+  padding-top: 3rem;
+}
+
+.title {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projectForm {
+  width: 40%;
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+
+    &:focus {
+      outline: none;
+      border-color: #1abc9c;
+      box-shadow: 0 0 0 2px rgba(26, 188, 156, 0.2);
+    }
+    &:hover {
+        outline: none;
+        border-color: #1abc9c;
+        box-shadow: 0 0 0 2px rgba(26, 188, 156, 0.2);
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+}
+
+.memberSelection {
+  height: fit-content;
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.memberOption {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  margin: 3px 7px;
+  input {
+    margin-right: 0.5rem;
+  }
+
+  label {
+    margin-top: 0.5rem
+  }
+}
+
+.submitButton {
+  background-color: #1abc9c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+
+  &:hover {
+    background-color: darken(#1abc9c, 10%);
+  }
+}
+
+.projectsGrid {
+  width: 80%;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(auto, fit-content);
+  grid-template-rows: repeat(auto, 5rem);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.projectCard {
+  height: fit-content;
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+
+  h3 {
+    margin: 0;
+    color: #2c3e50;
+  }
+}
+
+.NoAuth {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #4b132e;
+}
+
+.activeBadge {
+  background: #e67e22;
+  color: white;
+  padding: 0.25rem 0.5rem;  
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.completedBadge {
+  background: #4ebb62;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.description {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.cardDetails {
+  font-size: 0.9rem;
+  color: #666;
+
+  > div {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.memberTag {
+  display: inline-block;
+  background: #f1f1f1;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
