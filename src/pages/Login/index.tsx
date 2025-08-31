@@ -1,5 +1,5 @@
 import { useAuth } from "../../context/Authentication/index";
-import styles from './login.module.scss';
+import styles from './Login.module.scss';
 import * as Yup from "yup";
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -107,5 +107,6 @@ const Login: React.FC<LoginProps> = () => {
       </div>
     );
 };
+
 
 export default Login;
